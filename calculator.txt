@@ -1,0 +1,284 @@
+//Questions are::
+//29124-4929
+//28275 - 13182
+//28207 - 21676
+//27454 - 280
+//28207 - 175
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Formatter;
+import java.util.Locale;
+import java.text.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.*;
+import java.lang.Math;
+public class calculator
+{
+	private static final Scanner sc = new Scanner(System.in);
+	public static void main(String args[])
+	{
+		int len1,fir,len2;
+		int n2=0,sum2=0,i1=0,i2=0,i3=0,i4=0,i5=0,i6=0,i7=0,i8=0,i9=0,i10=0,i11=0,i12=0,i13=0,i14=0,i15=0,i16=0,i17=0,i18=0,i19=0,i20=0,i21=0,i43=0,i44=0,i45=0,i46=0,i47=0,i48=0,i49=0,i50=0,i51=0,i52=0,i53=0,i54=0,i55=0,i56=0,i57=0,i58=0,i59=0,i60=0,i61=0,i62=0,i63=0,i22=0,i23=0,i24=0,i25=0,i26=0,i27=0,i28=0,i29=0,i30=0,i31=0,i32=0,i33=0,i34=0,i35=0,i36=0,i37=0,i38=0,i39=0,i40=0,i41=0,i42=0;
+		int p=12;
+		int summ=0,summ1=0;
+		int l;
+		long se,se1,se2,xx=0,i101=0,i102=0,i103=0,xo1=0,xo=0,vall;
+		char chh1=1,chh2=1,chh3=1,chh4=1;
+		double sa=0;
+		double c,d,f;
+		BigDecimal bg1,bg2,bg3,bg4,bg5,bg6;
+		double sum=0;
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		c=a-b;
+		int ik =(int) b;
+		String smn=String.valueOf(ik);
+		System.out.println(c);
+		d=Math.sqrt(c);
+//	        System.out.println(d);   //ROOT IS COMING
+		int intpart = (int) d;
+		String s0 = String.valueOf(intpart);
+//		System.out.println(intpart); // number before decimal
+		String strDouble = String.format("%.11f",d);
+	//wrong 	calculator bd = new calculator(d).setScale(3,RoundingMode.HALF_UP);
+	//wrong	 double neww = bd.doubleValue();
+//		System.out.println(strDouble);
+		double k = Double.valueOf(strDouble);
+		String n1 = Double.toString(k);
+		len1 = n1.length();
+//		System.out.println(intpart);
+//		System.out.println(n1.substring((len1-11),len1-8));
+		String strt = n1.substring((len1-11),len1-8);
+//		System.out.println(strt); // 3 digit after decimal point
+		long i100 = Long.parseLong(strt);
+		long vas = Long.parseLong(strt);
+		String s = String.valueOf(d);
+		StringTokenizer t = new StringTokenizer(s,".");
+		String s1 = t.nextToken();
+		n2=s1.length();
+//		System.out.println(n2);
+		for(int i=0; i<=n2;i++)
+		{
+			sum = (d * Math.pow(.1,n2));
+		}
+//			System.out.println(sum);
+		String str2 = Double.toString(d); 
+		for(int q1=0;q1<s0.length();q1++)
+		{
+			int y1 = s0.charAt(q1)-48;
+			summ1 = summ1+y1;
+		}
+//	System.out.println(summ1); addition of integer part before decimal number 1+2+2=5
+// ---------------- start  for loop------------------------
+	for(int h=0;h<=14;h++)
+	{
+//  ------------------ if starting--------------------------
+		 chh1 = str2.charAt(h);
+		 chh2 = str2.charAt(h+1);
+		 chh3 = str2.charAt(12);
+		 chh4 = str2.charAt(11);
+		if( chh1 == '0' && chh2 == '0')
+		{
+			l = str2.indexOf("00");
+			bg3 = new BigDecimal(sum);
+			bg4 = bg3.movePointRight(l-1);
+			String nmm = bg4.toString();
+//			System.out.println(nmm);
+			 vall = (long) Double.parseDouble(nmm);
+//			System.out.println(vall);
+			 xo = vall % 1000;
+//			System.out.println(xo);  //LAST 3 DIGIT IS COMING
+			String f3 = Long.toString(xo);
+			se2 = vas - xo;
+			i103 = i100-xo;
+		 i43 = f3.charAt(0)-48;
+                 i44 = f3.charAt(1)-48;
+                 i45 = f3.charAt(2)-48;
+                 i46 = i43+i44+i45;
+//              System.out.println(i46); //vaue is 3+7+6=16
+//                 i47 = s0.charAt(0)-48;
+//                 i48 = s0.charAt(1)-48;
+//                 i49 = s0.charAt(2)-48;
+//               	 i50 = i47+i48+i49;
+//              System.out.println(i50); //vaue is 1+2+2=5
+		 i51 = strt.charAt(0)-48+strt.charAt(1)-48+strt.charAt(2)-48;
+                 i52 = i51;
+//              System.out.println(i52);//value is 8+5+3=16
+                 i53 = i46+i52;
+//                 System.out.println(i53); //value is 16+16=32
+                 i54 = i53/summ1;
+                 i55 = i54+1;
+//              System.out.println(i55); // value is 32/5 =7
+                 i56 = i52 + summ1;
+//              System.out.println(i56);//value is 16+5=21(Numerator)
+		 i57 = i46 + summ1 + i55;
+//              System.out.println(i57); //value is 16+5+7=28
+                 i58 = i52 + i55;
+//              System.out.println(i58); //value is 16+7=23
+                 i59 = i46 + summ1;
+//              System.out.println(i59); //value is 16+5=21(denominator)
+                 i60 = i55 + summ1;
+//              System.out.println(i60);//value is 7+5=12
+                 i61 = i57 + i59 + i60;
+//              System.out.println(i61); // value is 28+21+12=61
+		 i62 = i58 + i52 + i56;
+//              System.out.println(i62); //value is 23+16+21=60
+                 i63 = i52 + i60;
+//              System.out.println(i63); //value is 16+12=28
+ //               System.out.println(summ2);
+		break;
+		}
+		else if(chh3 == '0' && chh4!= '0')
+		{
+			bg5 = new BigDecimal(sum);
+			bg6 = bg5.movePointRight(11);
+			String nm2 = bg6.toString();
+//			System.out.println(nm2);
+			long vaa = (long)Double.parseDouble(nm2);
+			 xo1 = vaa % 1000;
+//			System.out.println(xo1);  // LAST 3 DIGIT IS COMING
+			String f2 = Long.toString(xo1);
+			se1 = vas - xo1;
+			i102 = i100-xo1;
+//		System.out.println("kk");  just checking
+		 i22 = f2.charAt(0)-48;
+                 i23 = f2.charAt(1)-48;
+                 i24 = f2.charAt(2)-48;
+                 i25 = i22+i23+i24;
+//              System.out.println(i25); //vaue is 3+7+6=16
+//                i26 = s0.charAt(0)-48;
+//                 i27 = s0.charAt(1)-48;
+//                 i28 = s0.charAt(2)-48;
+//                 i29 = i26+i27+i28;
+//              System.out.println(i29); //vaue is 1+2+2=5
+//		for(int os=0;os<s0.length();os++)
+//		{
+//			int y1 = s0.charAt(os)-48;
+//			summ1 = summ1+y;
+//		}
+                 i30 = strt.charAt(0)-48+strt.charAt(1)-48+strt.charAt(2)-48;
+                 i31 = i30;
+//              System.out.println(i31);//value is 8+5+3=16
+                 i32 = i25+i31;
+//		 System.out.println(i32); //value is 16+16=32
+                 i33 = i32/summ1;
+                 i34 = i33+1;
+//              System.out.println(i34); // value is 32/5 =7
+                 i35 = i31 + summ1;
+//              System.out.println(i35);//value is 16+5=21(Numerator)
+                 i36 = i25 + summ1 + i34;
+//              System.out.println(i36); //value is 16+5+7=28
+                 i37 = i31 + i34;
+//              System.out.println(i37); //value is 16+7=23
+                 i38 = i25 + summ1;
+//              System.out.println(i38); //value is 16+5=21(denominator)
+                 i39 = i34 + summ1;
+//              System.out.println(i39);//value is 7+5=12
+                 i40 = i36 + i38 + i39;
+//		System.out.println(i40); // value is 28+21+12=61
+                 i41 = i37 + i31 + i35;
+//              System.out.println(i41); //value is 23+16+21=60
+                 i42 = i31 + i39;
+//              System.out.println(i42); //value is 16+12=28
+//		 for(int os=0;os<smn.length();os++)
+//              {
+//                        int y3 = smn.charAt(os)-48;
+//                       summ1 = summ1+y3;
+//                }
+//              System.out.println(summ1);
+		break;
+		}
+//-----------------else starting----------------------------------------------
+		 	else if(chh1!='0' && chh2!='0' && chh3!='0')
+			{
+	     		 bg1 = new BigDecimal(sum);
+			 bg2 = bg1.movePointRight(12);
+			 String nm =  bg2.toString();
+//			 System.out.println(nm);
+			 long val = (long) Double.parseDouble(nm);
+//			 System.out.println(val);
+			  xx = val % 1000;
+//			 System.out.println(xx);//=======coming last 3 digit.
+			String f1 = Long.toString(xx);
+//----------------*****************************----------------------------
+			se = vas - xx;   //value is 477=853-376
+//		        System.out.println(se);
+			 i101 = i100-xx;
+//			System.out.println(i101);// value is 853-376=477
+//------------------------********************---------------
+		 i1 = f1.charAt(0)-48;
+		 i2 = f1.charAt(1)-48;
+		 i3 = f1.charAt(2)-48;
+		i4 = i1+i2+i3;
+//		System.out.println(i4); //vaue is 3+7+6=16
+//		 i5 = s0.charAt(0)-48;
+//		 i6 = s0.charAt(1)-48;
+//		 i7 = s0.charAt(2)-48;
+//		 i8 = i5+i6+i7;
+//		System.out.println(i8); //vaue is 1+2+2=5
+		i9 = strt.charAt(0)-48+strt.charAt(1)-48+strt.charAt(2)-48;
+		i10 = i9;
+//		System.out.println(i10);//value is 8+5+3=16
+		 i11 = i4+i10;
+//		System.out.println(i11); //value is 16+16=32
+		i12 = i11/summ1;
+		 i13 = i12+1;
+//		System.out.println(i13); // value is 32/5 =7
+		 i14 = i10 + summ1;
+//		System.out.println(i14);//value is 16+5=21(Numerator)
+		 i15 = i4 + summ1 + i13;
+//		System.out.println(i15); //value is 16+5+7=28
+		 i16 = i10 + i13;
+//		System.out.println(i16); //value is 16+7=23
+		 i17 = i4 + summ1;
+//		System.out.println(i17); //value is 16+5=21(denominator)
+		 i18 = i13 + summ1;
+//		System.out.println(i18);//value is 7+5=12
+		 i19 = i15 + i17 + i18;
+//		System.out.println(i19); // value is 28+21+12=61
+		 i20 = i14 + i16 + i10;
+//		System.out.println(i20); //value is 28+12+21=60
+		 i21 = i10 + i18;
+//		System.out.println(i21); //value is 16+12=28
+}
+}
+//	System.out.println(chh3);
+//	System.out.println(chh4);
+		for(int o=0;o<smn.length();o++)
+		{
+			int y = smn.charAt(o)-48;
+			summ = summ+y;
+		}
+	//	System.out.println(summ);   addition of b 1+3+1+8+2=15
+// ------------------End For loop--------------
+//	System.out.println(xo);
+	for(int h=0;h<=14;h++)
+	{
+//  ------------------ if starting--------------------------
+		 chh1 = str2.charAt(h);
+		 chh2 = str2.charAt(h+1);
+		 chh3 = str2.charAt(12);
+		 chh4 = str2.charAt(11);
+		if( chh1 == '0' && chh2 == '0')
+		{
+			System.out.println(+intpart+" "+strt+"/"+xo+" "+summ1+" "+i52+"/"+i46+" "+i53+"/"+summ1+" "+i55+" "+i56+"/"+i57+" "+i58+"/"+i59+" "+i52+"/"+i60+" "+i63+"/"+summ+" "+i62+"/"+i61+" "+i103);
+		System.out.println("Shubham");
+		break;
+		}
+		else if(chh3 == '0' && chh4!='0')
+		{
+			System.out.println(+intpart+" "+strt+"/"+xo1+" "+summ1+" "+i31+"/"+i25+" "+i31+"/"+summ1+" "+i34+" "+i35+"/"+i36+" "+i37+"/"+i38+" "+i31+"/"+i39+" "+i42+"/"+summ+" "+i41+"/"+i40+" "+i102);
+		System.out.println("kumar");
+		break;
+		}
+		else if(chh1!='0' && chh2!='0' && chh3!='0')
+		{
+			System.out.println(+intpart+" "+strt+"/"+xx+" "+summ1+" "+i10+"/"+i4+" "+i11+"/"+summ1+" "+i13+" "+i14+"/"+i15+" "+i16+"/"+i17+" "+i10+"/"+i18+" "+i21+"/"+summ+" "+i20+"/"+i19+" "+i101);
+		System.out.println("Rastogi");
+		break;
+		}
+	}
+//----------------public static end----------------------
+	}
+}
